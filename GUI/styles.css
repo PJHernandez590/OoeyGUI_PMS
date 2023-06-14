@@ -1,3 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.left {
+    width: 25%;
+    height: 100%;
+}
+
+.right {
+    width: 75%;
+}
+
+.Columns:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
