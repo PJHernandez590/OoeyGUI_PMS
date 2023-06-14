@@ -1,53 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mock Website</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to Mock Website</h1>
-  </header>
-  
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-  
-  <section>
-    <h2>About Us</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pretium aliquet arcu vitae venenatis. In id convallis risus. Sed maximus ultricies sapien et suscipit. Nulla facilisi. In a finibus tortor. Sed pharetra massa nisl, ac blandit tellus finibus in.</p>
-  </section>
-  
-  <section>
-    <h2>Our Services</h2>
-    <ul>
-      <li>Service 1</li>
-      <li>Service 2</li>
-      <li>Service 3</li>
-    </ul>
-  </section>
-  
-  <section>
-    <h2>Contact Us</h2>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required><br><br>
+  <div class="Columns">
+    <div class="column left" style="background-color:#aaa;">
+      <h1>Menu Column</h1>
+      <p></p>
+    </div>
+    
+    <div class="column right" style="background-color:#bbb">
+      <header>
+        <h1>Welcome to Mock Website</h1>
+      </header>
       
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required><br><br>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
       
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+      <section>
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pretium aliquet arcu vitae venenatis. In id convallis risus. Sed maximus ultricies sapien et suscipit. Nulla facilisi. In a finibus tortor. Sed pharetra massa nisl, ac blandit tellus finibus in.</p>
+      </section>
       
-      <input type="submit" value="Submit">
-    </form>
-  </section>
-  
+      <section>
+        <h2>Our Services</h2>
+        <ul>
+          <li>Service 1</li>
+          <li>Service 2</li>
+          <li>Service 3</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2>Contact Us</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required><br><br>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br><br>
+          
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea><br><br>
+          
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+    </div>
+  </div>
   <footer>
     <p>&copy; 2023 Mock Website. All rights reserved.</p>
   </footer>
