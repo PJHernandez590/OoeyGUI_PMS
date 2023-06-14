@@ -11,7 +11,8 @@
       <section>
         <h1>Menu Column</h1>
       </section>
-      <p></p>
+      
+      <p>To Be Changed into Search Bar</p>
       
       <nav>
         <ul>
@@ -21,6 +22,39 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
+
+      <section>
+        <h3>Testing Box Styles</h3>
+      </section>
+
+      <!-- Dropdown Menu Example (to be used for anytime we need one. Not ready) -->
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">New Project_____v</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+       </div>
+      </div>
+
+      <!-- Part of dropdown menu code. May be transferable to a JS file -->
+      <script>
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+      </script>
     </div>
     
     <div class="column right" style="background-color:#bbb">
