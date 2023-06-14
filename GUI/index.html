@@ -37,24 +37,8 @@
        </div>
       </div>
 
-      <!-- Part of dropdown menu code. May be transferable to a JS file -->
-      <script>
-        function myFunction() {
-          document.getElementById("myDropdown").classList.toggle("show");
-        }
-        window.onclick = function(event) {
-          if (!event.target.matches('.dropbtn')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-              var openDropdown = dropdowns[i];
-              if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-              }
-            }
-          }
-        }
-      </script>
+      <!-- Dropdown Menu JS -->
+      <script src="index.js" type="text/javascript"></script>
     </div>
     
     <div class="column right" style="background-color:#bbb">
