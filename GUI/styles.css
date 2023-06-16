@@ -35,7 +35,7 @@ header {
   background-color: #333;
   color: #fff;
   padding: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 nav {
@@ -74,7 +74,8 @@ footer {
 /* Dropdown Menu CSS */
 .dropbtn {
   background-color: #34db74;
-  color: rgb(0, 0, 0);
+  color: #000000;
+  width: 100%;
   padding: 16px;
   font-size: 16px;
   border: none;
@@ -88,7 +89,7 @@ footer {
 
 .dropdown {
   position: relative;
-  display: inline-block;
+  padding: 2px;
 }
 
 .dropdown-content {
@@ -107,6 +108,43 @@ footer {
   display: block;
 }
 
+.dropdown-content a:hover,
+.dropdown-content a:focus {
+  background-color: #b5b0b0;
+}
+
 .show {
+  display: block;
+}
+
+/* Second Dropdown Menu */
+.menu {
+  padding: 0px;
+}
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu ul li {
+  background-color: #333;
+  margin: 2px;
+  padding: 15px;
+}
+.menu ul li:hover {
+  background-color: #797f7c;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #f4f4f4;
+  padding: 2px;
+}
+.sub-menu-1 {
+  display: none;
+  position: absolute;
+  background-color: #29b965;
+}
+/* Should Work but needs debugging (for some reason) */
+.menu ul li:hover .sub-menu-1 {
   display: block;
 }

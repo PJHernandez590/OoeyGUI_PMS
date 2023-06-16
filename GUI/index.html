@@ -4,15 +4,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mock Website</title>
   <link rel="stylesheet" href="styles.css">
+
+    <!-- Dropdown Menu JS -->
+    <script src="index.js" type="text/javascript"></script>
 </head>
 <body>
   <div class="Columns">
+
     <div class="column left" style="background-color:#aaa;">
       <section>
         <h1>Menu Column</h1>
       </section>
-      
-      <p>To Be Changed into Search Bar</p>
       
       <nav>
         <ul>
@@ -23,9 +25,12 @@
         </ul>
       </nav>
 
-      <section>
-        <h3>Testing Box Styles</h3>
-      </section>
+    </div> <!-- Class: column left -->
+
+    <div class="column right" style="background-color:#bbb">
+      <header>
+        <h1>Home</h1>
+      </header>
 
       <!-- Dropdown Menu Example (to be used for anytime we need one. Not ready) -->
       <div class="dropdown">
@@ -37,49 +42,23 @@
        </div>
       </div>
 
-      <!-- Dropdown Menu JS -->
-      <script src="index.js" type="text/javascript"></script>
-    </div>
-    
-    <div class="column right" style="background-color:#bbb">
-      <header>
-        <h1>Welcome to Mock Website</h1>
-      </header>
-      
-      <section>
-        <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pretium aliquet arcu vitae venenatis. In id convallis risus. Sed maximus ultricies sapien et suscipit. Nulla facilisi. In a finibus tortor. Sed pharetra massa nisl, ac blandit tellus finibus in.</p>
-      </section>
-      
-      <section>
-        <h2>Our Services</h2>
+      <!-- Hover Dropdown Menu. Not done -->
+      <div class="menu">
         <ul>
-          <li>Service 1</li>
-          <li>Service 2</li>
-          <li>Service 3</li>
+          <li><a href="#">New Project</a></li>
+            <div class="sub-menu-1">
+              <ul>
+                <li><a href="#">Project_1</a></li>
+                <li><a href="#">Project_2</a></li>
+                <li><a href="#">Project_3</a></li>
+              </ul>
+            </div>
+          <li><a href="#">Current Projects</a></li>
+          <li><a href="#">Past Projects</a></li>
         </ul>
-      </section>
-      
-      <section>
-        <h2>Contact Us</h2>
-        <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required><br><br>
-          
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required><br><br>
-          
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="4" required></textarea><br><br>
-          
-          <input type="submit" value="Submit">
-        </form>
-      </section>
-    </div>
-  </div>
+      </div>
 
-  <!-- <footer>
-    <p>&copy; 2023 Mock Website. All rights reserved.</p>
-  </footer> -->
+    </div><!-- Class: column right -->
+  </div> <!-- class: Columns -->
 </body>
 </html>
